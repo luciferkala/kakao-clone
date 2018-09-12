@@ -7,6 +7,7 @@
   justify-content: space-between;
   padding: 10px 30px 5px 30px;
   border-top: 1px solid #c1c1c1;
+  transition: transform 1s linear;
 }
 .tab-bar .tab-bar__tab {
   display: flex;
@@ -14,7 +15,12 @@
   align-items: center;
   text-decoration: none;
   color: #c1c1c1;
+  transition: transform 0.3s linear;
 }
+.tab-bar .tab-bar__tab:hover {
+  transform: scale(1.1);
+}
+
 .tab-bar .tab-bar__tab--selected {
   color: #523737;
 }
